@@ -1,0 +1,65 @@
+body {
+  background-color:black;
+  width:100%;
+  text-align:center;
+}
+
+.gameHolder {
+  display:inline-block;
+}
+
+.FadeBlock {
+  width:1024px;
+  height:576px;
+  background-color:black;
+  position:absolute;
+  margin:auto;
+  opacity:0.0;
+  animation:"fade 1s ease-in-out forwards";
+}
+
+.play {
+  width: 180px;
+  height: 60px;
+  background-image:url("Images/Intro/Start.png");
+  background-repeat:no-repeat;
+  background-size:contain;
+  position:absolute;
+  margin-left:660px;
+  margin-top:230px;
+  transition:2s;
+}
+
+.play:hover {
+  width: 240px;
+  height: 75px;
+}
+
+.options {
+  width: 245px;
+  height: 60px;
+  background-image:url("Images/Intro/Options.png");
+  background-repeat:no-repeat;
+  background-size:contain;
+  position:absolute;
+  margin-left:660px;
+  margin-top:360px;
+  transition:2s;
+}
+
+.options:hover {
+  width: 327px;
+  height: 75px;
+}
+
+@keyframes fade { 100% { opacity:1;} }
+
+@keyframes fadeOut { 
+  0% {opacity:1;}
+  100% { opacity:0;} 
+}
+
+canvas {
+  margin-right:auto;
+}
+
